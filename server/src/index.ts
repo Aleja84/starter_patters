@@ -14,7 +14,7 @@ const PORT = 3005;
 const httpServer = createServer();
 const io = new Server(httpServer, {
   cors: {
-    origin: "*",
+    origin: "https://starter-patternsv2-client-git-main-aleja84s-projects.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
