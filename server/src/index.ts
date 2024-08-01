@@ -13,7 +13,10 @@ const PORT = 3005;
 
 const httpServer = createServer();
 const io = new Server(httpServer, {
-  
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"],
+  },
 });
 
 const db = Database.Instance;
